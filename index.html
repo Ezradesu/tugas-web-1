@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxygen</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+
+        *{
+            background-color: rgb(226, 255, 251);
+        }
+
+        .title{
+            text-align: center;
+            font-weight: 500;
+            font-size: 1000%;
+            
+        }
+
+        nav{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            border-bottom: 1px solid black;
+            margin: auto;
+            
+        }
+
+        ul{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 100px;
+
+        }
+
+        a:hover{
+            text-decoration: underline;
+            transition-duration: 2s;
+            
+
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .hero{
+            
+            transition-duration: 0.5s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border-radius: 10px;
+            filter: drop-shadow(10px 5px 20px rgb(181, 181, 181));
+        }
+
+        .hero:hover{
+            transform: translateY(-10px);
+            transition-duration: 0.5s;
+            
+        }
+
+        
+
+        .parag{
+            text-align: left;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .paragtit{
+            font-size: 200%;
+        }
+
+        footer{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li data-aos="fade-down" data-aos-delay="1000"><a href="index.html">home</a></li>
+            <li data-aos="fade-down" data-aos-delay="1500"><a href="about.html">about</a></li>
+            <li data-aos="fade-down" data-aos-delay="2000"><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <section class="Hero">
+        <h1 class="title" data-aos="fade" data-aos-duration="2000">Oxygen</h1>
+        <img class="hero" src="https://images.unsplash.com/photo-1714989887903-e74406563728?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oxygen">
+        <div class="parag">
+            <p class="paragtit" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, impedit ipsum nobis cupiditate quae culpa facere sed voluptatum officia. Reprehenderit consequatur ipsum ea nulla itaque, architecto facilis quisquam delectus neque?</p>
+            <p class="paragon" data-aos="fade-up" data-aos-duration="2000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates illo ullam molestiae dolorem, odit repellendus commodi eaque porro? Placeat laudantium obcaecati culpa minus vel facere quaerat, tempore quos quia cumque reprehenderit libero reiciendis consequuntur maiores accusamus atque voluptatem quasi unde provident eaque cum mollitia voluptate quidem. Accusamus alias quaerat suscipit ducimus et adipisci perferendis voluptate vitae voluptatibus, nulla rem nam commodi beatae autem explicabo aspernatur laudantium facere ullam voluptates facilis delectus aliquid exercitationem itaque eligendi. Aliquam aut repellendus mollitia, eveniet consequatur voluptatum expedita hic inventore consequuntur magnam odit quis beatae, commodi provident adipisci tenetur, vitae quam molestiae error alias dolore.</p>
+        </div>
+        
+    </section>
+    <footer>
+        <p>Copyright © 2022</p>
+    </footer>
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>
