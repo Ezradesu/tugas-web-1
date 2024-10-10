@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxygen</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
         *{
@@ -20,43 +21,53 @@
             
         }
 
+    header{
+            top: 0;
+            padding-top: 50px;
+            position: sticky;
+            z-index: 100;
+            margin: 0;
+            background: none;
+    }
+
         nav{
-            text-align: center;
+            
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 100px;
             justify-content: center;
             align-items: center;
-            font-size: 1.3vw;
-            border-bottom: 1px solid black;
-            margin: auto;
+            font-size: 2vw;
             
+            margin-left: 30vw;
+            margin-right: 30vw;
+            font-family: sans-serif;
+            filter: drop-shadow(5px 5px 5px rgb(192, 192, 192));
         }
 
         ul{
-            
+            padding: 0;
+            margin: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2vw;
-            margin: auto;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            gap: 10vw;
+            
         }
         a{
-            
             text-decoration: none;
-            color: black;
+            color: rgb(177, 177, 177);
             align-items: center;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border-radius: 100px;
-
+            padding: 0px;
+            transition-duration: 1s;
+            
         }
 
         a:hover{
             
-            text-decoration: underline;
-            transition-duration: 2s;
+            color: black;
+            transition-duration: 1s;
             
 
         }
@@ -129,13 +140,17 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li data-aos="fade-down" data-aos-delay="1000"><a href="index.html">home</a></li>
-            <li data-aos="fade-down" data-aos-delay="1500"><a href="about.html">about</a></li>
-            <li data-aos="fade-down" data-aos-delay="2000"><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <a class="navicon fa fa-home" data-aos="fade-down" data-aos-delay="1000" href="index.html"></a>
+                <a class="navicon fa fa-newspaper-o" data-aos="fade-down" data-aos-delay="1500" href="about.html"></a>
+                <a class="navicon fa fa-address-card-o" data-aos="fade-down" data-aos-delay="2000" href="contact.html"></a>
+                
+            </ul>
+        </nav>
+    </header>
+    
     <section class="Hero">
         <h1 class="title" data-aos="fade" data-aos-duration="2000">Oxygen</h1>
         <img class="hero" src="https://images.unsplash.com/photo-1714989887903-e74406563728?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oxygen">
