@@ -4,14 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oxygen</title>
+    <!-- google APIs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
 
         *{
-            background-color: rgb(213, 251, 255);
+            background-color: white;
+            user-select: none;
         }
         
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .poppins-black {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+
+        .poppins-regular-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .poppins-medium-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
 
         .title{
             text-align: center;
@@ -21,17 +75,16 @@
             
         }
 
-    header{
-            top: 0;
-            padding-top: 50px;
-            position: sticky;
-            z-index: 100;
-            margin: 0;
-            background: none;
-    }
+        header{
+                top: 0;
+                padding-top: 50px;
+                position: sticky;
+                z-index: 100;
+                margin: 0;
+                background: none;
+        }
 
         nav{
-            
             padding: 10px;
             display: flex;
             justify-content: center;
@@ -44,6 +97,21 @@
             margin-right: 30vw;
             font-family: sans-serif;
             filter: drop-shadow(5px 5px 5px rgb(192, 192, 192));
+        }
+
+        button{
+            background: linear-gradient(45deg, rgb(0, 89, 255), rgb(144, 183, 255));
+            padding: 1vw;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            transform: translateX(10px);
+            transition: 0.5s;
         }
 
         ul{
@@ -78,8 +146,29 @@
             list-style: none;
         }
 
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 50px;
+        }
+
+        
+
+        .heroimg{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150vw;
+            border-radius: 10px;
+        }
+
+
+
         .hero{
-            
             transition-duration: 0.5s;
             display: block;
             margin-left: auto;
@@ -89,6 +178,10 @@
             filter: drop-shadow(10px 5px 20px rgb(181, 181, 181));
         }
 
+        .herotit{
+            font-size: 2.3vw;
+        }
+
         .hero:hover{
             transform: translateY(-10px);
             
@@ -96,37 +189,15 @@
             
         }
 
-        
 
-        .parag{
-            
-            text-align: left;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 100px;
-            padding-bottom: 100px;
-        }
-
-        .paragtit{
-            
-            font-size: 3vw;
-            text-align: justify;
-            font-family: serif;
-            color: rgb(58, 58, 58);
-        }
-        .paragon{
-            font-size: 1.5vw;
-            text-align: justify;
-            font-family: sans-serif;
-            word-spacing: 0.2vw;
-            line-height: 3vw;
-            color: gray;
-            
+        section{
+            margin-bottom: 100px;
         }
 
         footer{
             border-top: 1px solid black;
             font-size: 1.2vw;
+            margin-top: 100px;
             margin: auto;
             width: 80vw;
             text-align: left;
@@ -135,9 +206,52 @@
             padding-top: 5vw;
             padding-bottom: 100px;
             font-family: monospace;
-            
-            
             text-align: left;
+        }
+
+        p{
+            color: rgb(82, 82, 82);
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                margin-top: 100px;
+                margin-left: 10%;
+                margin-right: 10%;
+                gap: 50px;
+            }
+            .heroimg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70vw;
+                border-radius: 10px;
+            }
+
+
+            .herotit{
+                font-size: 5vw;
+            }
+
+            .heroparag{
+                font-size: 3vw;
+            }
+
+            button{
+                padding: 2vw;
+                border: none;
+                color: white;
+                border-radius: 1vw;
+                font-size: 2.3vw;
+                transition: 0.5s;
+            }
+
+            button:hover{
+                transform: translateX(10px);
+                transition: 0.5s;
+            }
         }
     </style>
 </head>
@@ -154,16 +268,30 @@
         </nav>
     </header>
     <!-- bagian hapis -->
-    <section class="content">
-        <h1 class="title" data-aos="fade" data-aos-duration="2000">Oxygen</h1>
-        <img class="hero" src="https://images.unsplash.com/photo-1714989887903-e74406563728?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oxygen">
-        <div class="parag">
-            <p class="paragtit" data-aos="fade-up" data-aos-duration="2000">Oksigen, yang membentuk 21% atmosfer, penting untuk bernapas dan mengubah makanan menjadi energi.</p>
-            <p class="paragon" data-aos="fade-up" data-aos-duration="2000"><span style="font-weight: 600;">Oksigen</span> (O) dengan nomor atom 8 adalah komponen utama atmosfer yang membentuk sekitar 21%. Gas ini esensial bagi kehidupan karena berperan dalam proses respirasi untuk menghasilkan energi. Selain fungsi biologisnya, oksigen juga memiliki peran penting dalam industri medis dan pengelasan. Gas ini juga digunakan dalam pengobatan dan industri seperti pengelasan.</p>
-            <p style="font-style: italic; font-size: 1.5vw" data-aos="fade-right" data-aos-delay="1300">(Hafizhan Noor Amril)</p>
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <img class="heroimg" src="assets/heroimg.svg" alt="">
+            <div class="">
+                <h1 class="herotit poppins-bold" style="text-align: left;">Oksigen berperan penting untuk bernapas dan mengubah makanan menjadi energi.</h1>
+                <p class="heroparag poppins-regular" style="text-align: justify;">Unsur dengan nomor atom 8 ini merupakan komponen utama atmosfer yang membentuk sekitar 21%. Gas ini berperan penting bagi fungsi biologis manusia seperti respirasi atau pembentukan energi. Selain fungsi biologis, unsur ini juga biasa digunakan untuk bahan medis dan juga alat pengelasan.</p>
+                <p class="poppins-regular-italic" data-aos="fade-right" data-aos-delay="2000">(Hafizhan Noor Amril)</p>
+            </div>
         </div>
-        
     </section>
+    <section>
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
+            <div class="">
+                <h1 class="herotit poppins-bold" style="text-align: left;">Apa itu Oxyku?</h1>
+                <p class=" heroparag poppins-regular" style="text-align: justify;">Dengan hadirnya aplikasi ini, besar harapan kami untuk dapat membantu kebutuhan anda akan oksigen baik itu isi ulang ataupun pembelian alat secara online melalui perangkat mobile.</p>
+                <p class="poppins-regular-italic" data-aos="fade-right" data-aos-delay="2000">(Ezra Raditya Dwi Anugrah)</p>
+                <button class="poppins-semibold">Read More</button>
+            </div>
+            <img  class="heroimg" src="assets/mainimg.svg" alt="">
+            
+        </div>
+    </section>
+
+
     <footer>
         <a style="text-decoration: underline;" href="https://github.com/Ezradesu/tugas-web-1">github↗</a>
     </footer>
