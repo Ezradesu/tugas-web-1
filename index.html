@@ -213,6 +213,31 @@
             color: rgb(82, 82, 82);
         }
 
+        .centeredimg{
+            width: 50vw;
+        }
+
+        .content{
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+
+        .button{
+            background: linear-gradient(45deg, rgb(0, 89, 255), rgb(144, 183, 255));
+            padding: 1vw;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            transition: 0.5s;
+            
+        }
+
         @media only screen and (max-width: 600px) {
             .container{
                 display: flex;
@@ -237,6 +262,7 @@
 
             .heroparag{
                 font-size: 3vw;
+                
             }
 
             button{
@@ -246,6 +272,21 @@
                 border-radius: 1vw;
                 font-size: 2.3vw;
                 transition: 0.5s;
+                
+            }
+
+            p{
+                font-size: 3vw;
+            }
+
+            .button{
+                padding: 2vw;
+                border: none;
+                color: white;
+                border-radius: 1vw;
+                font-size: 2.3vw;
+                transition: 0.5s;
+                
             }
 
             button:hover{
@@ -278,6 +319,8 @@
             </div>
         </div>
     </section>
+
+    <!-- bagian ezra -->
     <section>
         <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <div class="">
@@ -287,13 +330,23 @@
                 <button class="poppins-semibold">Read More</button>
             </div>
             <img  class="heroimg" src="assets/mainimg.svg" alt="">
+        </div>
+    </section>
+    <!-- bagian stephen -->
+    <section>
+        <div class="content" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="herotit poppins-bold">Mengapa kita butuh Oxygen?</h1>
+            <img class="centeredimg" src="assets/stephenimg.svg" alt="">
+            <p class="heroparag poppins-regular">Oksigen merupakan salah satu gas yang terdapat di udara bebas yang memiliki peran penting untuk kelangsungan hidup. Oksigen merupakan salah satu bahan yang diperlukan untuk <span style="font-weight: 700;">menghasilkan energi</span> oleh sel tubuh kita. Tanpa oksigen organ–organ tubuh kita tidak dapat berfungsi baik.</p>
+            <p class="poppins-regular-italic" style="margin-bottom: 2vw;" data-aos="fade-right" data-aos-delay="2000">(Stephen Helenus Kaawoan)</p>
+            <a class="button poppins-semibold"  href="https://yankes.kemkes.go.id/view_artikel/844/perjalanan-oksigen-di-tubuh-kita#:~:text=Oksigen%20merupakan%20salah%20satu%20gas,kita%20tidak%20dapat%20berfungsi%20baik" class="poppins-semibold">Pelajari Lebih Lanjut</a>
             
         </div>
     </section>
 
 
     <footer>
-        <a style="text-decoration: underline;" href="https://github.com/Ezradesu/tugas-web-1">github↗</a>
+        <a style="text-decoration: underline; font-size: 1vw;" href="https://github.com/Ezradesu/tugas-web-1">github↗</a>
     </footer>
     
 </body>
