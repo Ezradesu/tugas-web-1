@@ -1,0 +1,341 @@
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+        *{
+            background-color: white;
+            user-select: none;
+        }
+        
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .poppins-medium {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .poppins-extrabold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .poppins-black {
+            font-family: "Poppins", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+
+        .poppins-regular-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .poppins-medium-italic {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .title{
+            text-align: center;
+            font-weight: 500;
+            font-size: 15vw;
+            color: rgb(55, 55, 55);
+            
+        }
+
+        header{
+                top: 0;
+                padding-top: 50px;
+                position: sticky;
+                z-index: 100;
+                margin: 0;
+                background: none;
+        }
+
+        nav{
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            margin-left: 35vw;
+            margin-right: 35vw;
+            font-family: sans-serif;
+            filter: drop-shadow(5px 5px 5px rgb(192, 192, 192));
+        }
+
+        button{
+            background: linear-gradient(45deg, rgb(0, 89, 255), rgb(144, 183, 255));
+            padding: 1vw;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            transition: 0.5s;
+        }
+
+        button:hover{
+            transform: translateX(10px);
+            transition: 0.5s;
+        }
+
+        ul{
+            background: none;
+            padding: 0;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+            
+        }
+        a{
+            background: none;
+            text-decoration: none;
+            color: rgb(177, 177, 177);
+            align-items: center;
+            padding: 0px;
+            transition-duration: 1s;
+            
+        }
+
+        a:hover{
+            
+            color: black;
+            transition-duration: 1s;
+            
+
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 10%;
+            margin-right: 10%;
+            gap: 50px;
+        }
+
+        
+
+        .heroimg{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150vw;
+            border-radius: 10px;
+        }
+
+
+
+        .hero{
+            transition-duration: 0.5s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border-radius: 10px;
+            filter: drop-shadow(10px 5px 20px rgb(181, 181, 181));
+        }
+
+        .herotit{
+            font-size: 2.3vw;
+        }
+
+        .hero:hover{
+            transform: translateY(-10px);
+            
+            transition-duration: 0.5s;
+            
+        }
+
+        .cards{
+
+            padding: 10px 10px 30px 10px;
+        }
+
+        .cardimg{
+            border-radius: 10px;
+        }
+        section{
+            margin-bottom: 100px;
+        }
+
+        footer{
+            border-top: 1px solid black;
+            font-size: 1.2vw;
+            margin-top: 100px;
+            margin: auto;
+            width: 80vw;
+            text-align: left;
+            justify-content: left;
+            align-items: center;
+            padding-top: 5vw;
+            padding-bottom: 100px;
+            font-family: monospace;
+            text-align: left;
+        }
+
+
+        .centeredimg{
+            width: 50vw;
+        }
+
+        .content{
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            
+        }
+
+        .button{
+            background: linear-gradient(45deg, rgb(0, 89, 255), rgb(144, 183, 255));
+            padding: 1vw;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.3vw;
+            transition: 0.5s;
+            
+        }
+
+        .heroin{
+            padding: 10vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://img.freepik.com/free-photo/3d-rendering-gas-cylinder_23-2149290473.jpg?t=st=1729781397~exp=1729784997~hmac=e7f492442d1905a1e14588c3c54ffc17cd8711a197a8ff445388d3388b5cdc78&w=740");
+        }
+
+        .counter p{
+            background: linear-gradient(45deg, rgb(0, 89, 255), rgb(144, 183, 255));
+            background-clip: text;
+            color: line;
+        }
+
+
+        /* form */
+
+        .contain{
+            display: flex;
+            background-color: #00b4d8;
+            border-radius: 10px;
+            margin-left: 15vw;
+            margin-right: 15vw;
+            padding: 3vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        label{
+            background: none;
+            color: white;
+        }
+
+        input{
+            padding: 1vw 4vw 1vw 20vw;
+            border-radius: 10px;
+            border: none;
+        }
+
+        textarea{
+            border: none;
+            padding: 1vw 4vw 1vw 15vw;
+            border-radius: 10px;
+        }
+
+
+        
+        @media only screen and (max-width: 600px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+                margin-top: 100px;
+                margin-left: 10%;
+                margin-right: 10%;
+                gap: 50px;
+            }
+            .heroimg{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 70vw;
+                border-radius: 10px;
+            }
+
+
+            .herotit{
+                font-size: 5vw;
+            }
+
+            .heroparag{
+                font-size: 3vw;
+                color: rgb(82, 82, 82);
+                
+            }
+
+            button{
+                padding: 2vw;
+                border: none;
+                color: white;
+                border-radius: 1vw;
+                font-size: 2.3vw;
+                transition: 0.5s;
+                
+                
+            }
+
+            p{
+                font-size: 3vw;
+            }
+
+            .button{
+                padding: 2vw;
+                border: none;
+                color: white;
+                border-radius: 1vw;
+                font-size: 2.3vw;
+                transition: 0.5s;
+                
+            }
+
+            button:hover{
+                transform: translateX(10px);
+                transition: 0.5s;
+            }
+
+            .we{
+                font-family: poppins-regular;
+                display: flex;
+                flex-direction: column;
+            }
+        }
